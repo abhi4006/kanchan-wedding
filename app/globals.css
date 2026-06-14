@@ -368,11 +368,11 @@ a {
 }
 
 .venue {
-  display: grid;
+  position: relative;
+  display: flex;
   width: 100%;
-  grid-template-columns: 3.6cqw 1fr 3.6cqw;
   align-items: center;
-  gap: 1.4cqw;
+  justify-content: center;
   padding: 1cqw 1.5cqw;
   border: 1px solid rgba(169, 120, 53, 0.2);
   border-radius: 2cqw;
@@ -394,10 +394,9 @@ a {
 }
 
 .venue-pin {
-  width: 3.6cqw;
-  height: 3.6cqw;
+  width: 2.4cqw;
+  height: 2.4cqw;
   flex: none;
-  justify-self: center;
   color: var(--gold);
   stroke-width: 1.8;
 }
@@ -412,9 +411,12 @@ a {
 }
 
 .venue-arrow {
+  position: absolute;
+  top: 50%;
+  right: 1.5cqw;
   width: 2.8cqw;
   height: 2.8cqw;
-  justify-self: center;
+  transform: translateY(-50%);
   color: rgba(139, 47, 80, 0.62);
   stroke-width: 1.7;
 }
@@ -434,6 +436,10 @@ a {
 }
 
 .venue small {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45cqw;
   color: #8e6448;
   font-size: clamp(7px, 1.55cqw, 9px);
   font-weight: 700;

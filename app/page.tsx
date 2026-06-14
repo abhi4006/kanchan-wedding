@@ -128,9 +128,11 @@ export default function Home() {
             rel="noreferrer"
             aria-label="आनंदी होम्स बैंक्वेट का स्थान Google Maps पर खोलें"
           >
-            <MapPin className="venue-pin" aria-hidden="true" />
             <span className="venue-copy">
-              <small>विवाह स्थल</small>
+              <small>
+                <MapPin className="venue-pin" aria-hidden="true" />
+                विवाह स्थल
+              </small>
               <strong>आनंदी होम्स बैंक्वेट</strong>
               <em>
                 सी-4, केंद्रीय विहार के सामने, होशियारपुर गाँव,
