@@ -263,22 +263,30 @@ a {
 }
 
 .date-block {
-  display: flex;
+  display: grid;
+  grid-template-columns: 4.5cqw auto 4.5cqw;
   align-items: center;
   gap: 2cqw;
   color: var(--maroon);
 }
 
+.date-block::after {
+  width: 4.5cqw;
+  height: 4.5cqw;
+  content: "";
+}
+
 .date-block svg {
   width: 4.5cqw;
   height: 4.5cqw;
+  justify-self: center;
   stroke-width: 1.6;
 }
 
 .date-block div {
   display: flex;
   flex-direction: column;
-  text-align: left;
+  text-align: center;
 }
 
 .date-block span {
@@ -313,15 +321,22 @@ a {
 }
 
 .schedule-item {
-  display: flex;
+  display: grid;
+  grid-template-columns: 2.9cqw 1fr 2.9cqw;
   align-items: center;
-  justify-content: center;
   gap: 1.3cqw;
+}
+
+.schedule-item::after {
+  width: 2.9cqw;
+  height: 2.9cqw;
+  content: "";
 }
 
 .schedule-item svg {
   width: 2.9cqw;
   height: 2.9cqw;
+  justify-self: center;
   color: var(--gold);
   stroke-width: 1.8;
 }
@@ -329,7 +344,7 @@ a {
 .schedule-item div {
   display: flex;
   flex-direction: column;
-  text-align: left;
+  text-align: center;
 }
 
 .schedule-item span {
@@ -355,7 +370,7 @@ a {
 .venue {
   display: grid;
   width: 100%;
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: 3.6cqw 1fr 3.6cqw;
   align-items: center;
   gap: 1.4cqw;
   padding: 1cqw 1.5cqw;
@@ -364,7 +379,7 @@ a {
   color: var(--deep-maroon);
   background: rgba(255, 250, 249, 0.42);
   box-shadow: 0 3px 12px rgba(91, 31, 54, 0.05);
-  text-align: left;
+  text-align: center;
   text-decoration: none;
   transition:
     border-color 180ms ease,
@@ -382,6 +397,7 @@ a {
   width: 3.6cqw;
   height: 3.6cqw;
   flex: none;
+  justify-self: center;
   color: var(--gold);
   stroke-width: 1.8;
 }
@@ -390,12 +406,15 @@ a {
   display: flex;
   min-width: 0;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
   line-height: 1.2;
 }
 
 .venue-arrow {
   width: 2.8cqw;
   height: 2.8cqw;
+  justify-self: center;
   color: rgba(139, 47, 80, 0.62);
   stroke-width: 1.7;
 }
