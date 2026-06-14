@@ -1,0 +1,11 @@
+{
+  "name": "कंचन का शुभ विवाह",
+  "short_name": "कंचन विवाह",
+  "description": "वधू पक्ष की ओर से कंचन एवं अभिषेक के शुभ विवाह का निमंत्रण।",
+  "lang": "hi",
+  "start_url": "/kanchan-wedding/",
+  "scope": "/kanchan-wedding/",
+  "display": "standalone",
+  "background_color": "#fdf5ef",
+  "theme_color": "#6f1d1b"
+}
