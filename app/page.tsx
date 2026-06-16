@@ -64,7 +64,7 @@ export default function Home() {
             <div className="person">
               <h2>कंचन</h2>
               <p>
-                सुपुत्री श्री श्रीनाथ
+                सुपुत्री श्री श्रीनाथ यादव
                 <br />
                 एवं श्रीमती लालती देवी
               </p>
